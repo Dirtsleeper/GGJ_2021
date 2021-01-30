@@ -24,4 +24,7 @@ protected:
 
 	UFUNCTION(BlueprintCallable)
 	int GetConnectedGamepads();
+
+	UFUNCTION(BlueprintCallable)
+	void ToggleSplitScreen(bool bSplitScreenEnabled);
 };

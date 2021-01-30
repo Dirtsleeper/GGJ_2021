@@ -21,6 +21,14 @@ int AGGJ_GameMode::GetConnectedGamepads()
 	return 0;
 }
 
+void AGGJ_GameMode::ToggleSplitScreen(bool bSplitScreenEnabled)
+{
+	if (GetWorld() && GetWorld()->GetGameViewport())
+	{
+		GetWorld()->GetGameViewport()->SetDisableSplitscreenOverride(!bSplitScreenEnabled);
+	}
+}
+
 void AGGJ_GameMode::OnControllerConnectionChanged_Implementation(bool bIsConnected, int32 UserIndex)
 {
 

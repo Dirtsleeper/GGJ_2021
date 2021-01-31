@@ -9,4 +9,5 @@ UGGJ_TextBlock::UGGJ_TextBlock(const FObjectInitializer& initializer)
 {
 	static ConstructorHelpers::FObjectFinder<UFont> MyFontObj(TEXT("/Game/Assets/MyFonts/MilkieWylkie_Font.MilkieWylkie_Font"));
 	Font = FSlateFontInfo(MyFontObj.Object, 24, FName("Regular"));
+	ColorAndOpacity = FSlateColor(FLinearColor(0.651406f, 0.791298f, 0.428691f));
 }
